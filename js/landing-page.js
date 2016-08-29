@@ -29,3 +29,34 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+/*
+$('div.popup') {
+    var modal = document.getElementById('#portfolioModal1');
+
+    var open = document.getElementById('open-popup1');
+
+    // close button
+    var span = document.getElementsByClassName("close")[0];
+    // TRY ELEMENTS WITHOUT AN S?
+
+    // when the user clicks on the heading, opens the popup
+    open.onclick = function() {
+        popup.style.display = "block"
+    }
+
+    //when the user clicks on <span> {x} close the popup
+    span.onclick = function {
+        popup.style.display = "none"; 
+    }
+
+    //when the user clicks anywhere oustide of the popup, close it
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+
+
+};
+*/

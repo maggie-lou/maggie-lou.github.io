@@ -2,6 +2,37 @@
 <!-- Page Content -->
 {% for post in site.posts reversed %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+
+   <script>
+        function open_modal{{ post.number }}() {
+            var mod = document.getElementById('portfolioModal{{ post.number }}');
+            var backdrop = document.getElementById("black modal backdrop");
+
+            mod.style.display = "block";
+            backdrop.style.display = "block";
+        }
+
+        function close_modal{{ post.number }}() {
+            var mod = document.getElementById('portfolioModal{{ post.number }}');
+            var backdrop = document.getElementById("black modal backdrop");
+
+            mod.style.display = "none";
+            backdrop.style.display = "none";
+
+        }
+
+        //When the user presses the ESC key (key code 27), close modal 
+        document.addEventListener('keyup', function(e) {
+            if (e.keyCode ==27) {
+                close_modal{{ post.number }}();
+            }
+        })
+
+    </script>
+
+    <div class = "modal-backdrop fade in" id = "black modal backdrop" style = "display: none;"></div> 
+
+    
     {% if thecycle == 'odd' %}
     <div class="content-section-a">
 
@@ -11,7 +42,7 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="post-title" onclick = "open_modal{{ post.number }}()" style = "cursor: pointer;">{{ post.title }}</div>
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -19,9 +50,74 @@
                 </div>
             </div>
 
+            <!--/ popup module -->
+            <div class = "portfolio-modal modal fade in" id = "portfolioModal{{ post.number }}" tabindex = "-1" role = "dialog" aria-hidden = "true">
+                <div class = "modal-content">
+                    <div class = "close-modal" onclick = "close_modal{{ post.number }}()">
+                        <div class = "lr">
+                            <div class = "rl">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blue-header" style = "font-size:350%; padding-bottom: 1%;">{{ post.title }}</div>
+
+                    <div class = "lead" align = "justify">{{ post.modalhead }}</div>
+
+                    <div class = "blue-header" style = "font-size: 250%; padding-bottom:2%; padding-top: 1%;"> How It Works </div>
+
+                    <div class = "lead">
+                        <ol align = "justify">
+                            <li>
+                                {{ post.howto1 }}
+                            </li>
+                            
+                            <br/>
+                            <li>
+                                {{ post.howto2 }}
+                            </li>
+                            
+                            {% if post.howto3 %}
+                            <br/>
+                             <li>
+                                {{ post.howto3 }}
+                             </li>
+                             {% endif %}
+
+                             {% if post.howto4 %}
+                             <br/>
+                             <li>
+                                {{ post.howto4 }}
+                             </li>
+                             {% endif %}
+
+                             {% if post.howto5 %}
+                             <br/>
+                             <li>
+                                {{ post.howto5 }}
+                             </li>
+                             {% endif %}
+
+                             {% if post.howto6 %}
+                             <br/>
+                             <li>
+                                {{ post.howto6 }}
+                             </li>
+                             {% endif %}
+
+                        </ol>
+                    </div>
+
+                    <button type = "button" class = "btn btn-default btn-lg" onclick = "close_modal{{ post.number }}()" style = "margin-top: 2%;">
+                        <i class = "fa fa-times"> </i>
+                        Close
+                    </button>
+
+                </div>
+            </div>
+
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.content-section-a -->
     {% else %}
@@ -34,7 +130,7 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="post-title" onclick = "open_modal{{ post.number }}()" style = "cursor: pointer;">{{ post.title }}</div>
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
@@ -42,6 +138,71 @@
                 </div>
             </div>
 
+            <!--/ popup module -->
+            <div class = "portfolio-modal modal fade in" id = "portfolioModal{{ post.number }}" tabindex = "-1" role = "dialog" aria-hidden = "true">
+                <div class = "modal-content">
+                    <div class = "close-modal" onclick = "close_modal{{ post.number }}()">
+                        <div class = "lr">
+                            <div class = "rl">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blue-header" style = "font-size:350%; padding-bottom: 1%;">{{ post.title }}</div>
+
+                    <div class = "lead" align = "justify">{{ post.modalhead }}</div>
+
+                    <div class = "blue-header" style = "font-size: 250%; padding-bottom: 2%; padding-top: 1%;"> How It Works </div>
+
+                    <div class = "lead">
+                        <ol align = "justify">
+                            <li>
+                                {{ post.howto1 }}
+                            </li>
+                            
+                            <br/>
+                            <li>
+                                {{ post.howto2 }}
+                            </li>
+                            
+                            {% if post.howto3 %}
+                            <br/>
+                             <li>
+                                {{ post.howto3 }}
+                             </li>
+                             {% endif %}
+
+                             {% if post.howto4 %}
+                             <br/>
+                             <li>
+                                {{ post.howto4 }}
+                             </li>
+                             {% endif %}
+
+                             {% if post.howto5 %}
+                             <br/>
+                             <li>
+                                {{ post.howto5 }}
+                             </li>
+                             {% endif %}
+
+                             {% if post.howto6 %}
+                             <br/>
+                             <li>
+                                {{ post.howto6 }}
+                             </li>
+                             {% endif %}
+
+                        </ol>
+                    </div>
+
+                    <button type = "button" class = "btn btn-default btn-lg" onclick = "close_modal{{ post.number }}()" style = "margin-top: 2%;">
+                        <i class = "fa fa-times"> </i>
+                        Close
+                    </button>
+
+                </div>
+            </div>
         </div>
         <!-- /.container -->
 
@@ -50,3 +211,4 @@
     {% endif %}
 {% endfor %}
 </section>
+

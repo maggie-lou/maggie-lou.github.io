@@ -9,19 +9,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#home">{{ site.title }}</a>
+            <a  style = "font-family: Ostrich Sans Medium; letter-spacing: 3px; color: rgb(0,145,196); font-weight: 500; font-size: 35px" class="navbar-brand page-scroll" href="#home">{{ site.title }}</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">  
             	<li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#about" style ="font-family: Ostrich Sans Medium; letter-spacing: 3px; color: rgb(0,155,216); font-weight: 500; font-size: 20px;">About</a>
                 </li>            
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#services" style = "font-family: Ostrich Sans Medium; letter-spacing: 3px; color: rgb(0,155,216); font-weight: 500; font-size: 20px;">Portfolio</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#contact" style = "font-family: Ostrich Sans Medium; letter-spacing: 3px; color: rgb(0,155,216); font-weight: 500; font-size: 20px;">Contact</a>
                 </li>
             </ul>
         </div>
@@ -39,16 +39,6 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="intro-message">
-						<h1>{{ page.title }}</h1>
-						<h3>{{ page.subTitle }}</h3>
-						<hr class="intro-divider">
-						<ul class="list-inline intro-social-buttons">
-							{% for social in site.social %}
-							<li>
-								<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
-							</li>
-							{% endfor %}
-						</ul>
 					</div>
 				</div>
 			</div>

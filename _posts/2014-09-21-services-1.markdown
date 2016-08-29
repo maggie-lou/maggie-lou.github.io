@@ -1,8 +1,14 @@
 ---
 layout: default
-img: ipad.png
+img: escape_3.png
 category: Services
-title: Death to the Stock Photo:<br>Special Thanks
-description: |
+title: Over Auto-Text 
+description:
+number: 1
+modalhead: To facilitate the creative process, Over offers users who don’t know where to begin a collection of pre-loaded images. Many users, however, still struggle with coming up with the right words to include on their image. Once users have started a project by uploading a picture, they can use the auto-text feature to choose a category or input a search term to find related content from Over’s text database. Even cooler, users can use the “Magic” button, which uses image recognition to automatically recommend content directly related to the input picture. 
+howto1: Text content is stored in a SQLite database and tagged with category, character length, and author.
+howto2: Front end developers send GET requests including a category, search term, or link to the user’s image, which is temporarily hosted online (the image recognition API takes a URL as an input).
+howto3: If the “Magic” button is being utilized, an image recognition API returns a series of tags for the image, which represent objects the API believes it has identified in the photo, and a confidence interval for each tag. 
+howto4: Using natural language processing to optimize matches, an R script processes the API request and image recognition tags and returns all related content in a JSON.
 ---
-  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
+Over is a photo editing mobile application that allows users to easily overlay photos with text. Several interns and I developed the beta version of a feature that suggests text to users based on category, search term, or using image recognition to recommend content related to the underlying photo. I worked on the backend of the feature, which included managing text content in a SQLite database, creating an API so that frontend developers can access the database, and working with an image recognition API and natural language processing.

@@ -4,14 +4,10 @@
 
 url: https://maggie-lou.github.io
 title: Maggie Lou 
-email: margaretlou2019@u.northwestern.edu
+email: mlou2019@gmail.com
 author: Maggie Lou
-description: > # "Write an awesome description for your new site here. 
-  You can edit this line in _config.yml. It will appear in your document 
-  head meta (for Google search results) and in your feed.xml site 
-  description.
-copyright: 'Copyright &copy; 2015 Your Name. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+description: > # "Hi, I'm Maggie. I'm a sophomore at Northwestern studying Computer Science in the McCormick School of Engineering. I want to use clever and creative programming to produce utility with tangible results. Let's create together.
+copyright: 'Copyright &copy; 2016 Maggie Lou. All Rights Reserved.'
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -26,9 +22,7 @@ permalink: pretty
 # ----------------------- #
 
 social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+    url: https://github.com/maggie-lou
   - title: linkedin
-    url: 
+    url: https://www.linkedin.com/in/maggie-lou-4a3bb110a
