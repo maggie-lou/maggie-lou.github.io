@@ -1,6 +1,7 @@
 ---
 layout: default
 img: overkpidash.png
+imgbig: overkpidash_big.png
 category: Services
 title: Over KPI Dashboard
 description:
