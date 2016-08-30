@@ -28,6 +28,23 @@
             }
         })
 
+        function open_img{{ post.number }}() {
+            var mod = document.getElementById('imageModal{{ post.number }}');
+            var backdrop = document.getElementById("black modal backdrop");
+
+            mod.style.display = "block";
+            backdrop.style.display = "block";
+        }
+
+        function close_img{{ post.number }}() {
+            var mod = document.getElementById('imageModal{{ post.number }}');
+            var backdrop = document.getElementById("black modal backdrop");
+
+            mod.style.display = "none";
+            backdrop.style.display = "none";
+
+        }
+
     </script>
 
     <div class = "modal-backdrop fade in" id = "black modal backdrop" style = "display: none;"></div> 
@@ -46,7 +63,7 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="" onclick = "open_img{{ post.number }}()" style = "cursor:pointer;">
                 </div>
             </div>
 
@@ -116,6 +133,21 @@
                 </div>
             </div>
 
+            <!-- image module -->
+            <div class = "portfolio-modal modal fade in" id = "imageModal{{ post.number }}" tabindex = "-1" role = "dialog" aria-hidden = "true">
+                <div class = "modal-content">
+                    <div class = "close-modal" onclick = "close_img{{ post.number }}()">
+                        <div class = "lr">
+                            <div class = "rl">
+                            </div>
+                        </div>
+                    </div>
+
+                <img class="img-responsive" src="img/services/{{ post.imgbig }}" alt="">
+
+                </div>
+            </div>
+
         </div>
         <!-- /.container -->
     </div>
@@ -133,8 +165,7 @@
                     <div class="post-title" onclick = "open_modal{{ post.number }}()" style = "cursor: pointer;">{{ post.title }}</div>
                     <div class="lead">{{ post.content }}</div>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6"><img class="img-responsive" src="img/services/{{ post.img }}" alt="" onclick = "open_img{{ post.number }}()" style = "cursor:pointer;">
                 </div>
             </div>
 
@@ -203,6 +234,23 @@
 
                 </div>
             </div>
+
+             <!-- image module -->
+            <div class = "portfolio-modal modal fade in" id = "imageModal{{ post.number }}" tabindex = "-1" role = "dialog" aria-hidden = "true">
+                <div class = "modal-content">
+                    <div class = "close-modal" onclick = "close_img{{ post.number }}()">
+                        <div class = "lr">
+                            <div class = "rl">
+                            </div>
+                        </div>
+                    </div>
+
+                <img class="img-responsive" src="img/services/{{ post.imgbig }}" alt="">
+
+                </div>
+            </div>
+
+
         </div>
         <!-- /.container -->
 

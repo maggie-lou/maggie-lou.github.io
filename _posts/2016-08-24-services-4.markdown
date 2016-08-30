@@ -1,6 +1,7 @@
 ---
 layout: default
 img: curate_ipad.png
+imgbig: curate_ipad_big.png
 category: Services
 title: cuRate
 description: |
