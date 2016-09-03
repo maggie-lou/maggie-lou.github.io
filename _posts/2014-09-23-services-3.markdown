@@ -3,13 +3,13 @@ layout: default
 img: escape_3.png
 imgbig: escape_3_big.png
 category: Services
-title: Escape 
+title: ESCAPE
 description: |
 number: 3
 modalhead: Planning how to spend your day can be stressful, especially given the endless possibilities and overwhelming amount of content available on the internet. Sometimes you just want to be told where to go and a suggestion for how long you should spend there.  If you’re unhappy with your generated itinerary, you can choose to regenerate your entire schedule, or lock in certain events and regenerate the rest until you’ve planned your perfect day.<br/><br/>I developed Escape with a team during a hackathon for iXperience, a programming boot camp I attended over the summer. I worked on the backend of the app, which is coded in R.  
-howto1: Details about each event – including its name, duration, location, and description – were scraped from TripAdvisor, Zomato, and Google knowledge graphs, and stored in a SQLite database. 
-howto2: The itinerary generation algorithm references user preferences for time of day and interests, as well as a distance matrix to minimize total distance traveled. The algorithm also incorporates opening and closing times of each event, so only recommends each event during its functional hours. 
+howto1: Details about each event – including its name, duration, location, and description – are scraped from TripAdvisor, Zomato, and Google knowledge graphs and stored in a SQLite database. 
+howto2: The itinerary generation algorithm references user preferences for time of day and interests, as well as a distance matrix to minimize total distance traveled. The algorithm also incorporates opening and closing times of each event, to ensure events are only recommended during their functional hours.
 howto3: The algorithm continues suggesting events, including food options at conventional mealtimes, until the total duration of the events equals the duration for which the user wishes to plan. 
 howto4: Developers working on the iOS and web applications receive the final schedule via an API hosted on an Amazon EC2 instance, which they then display to users.
 ---
-  Escape is an easy way for travelers to explore foreign cities and locals to discover new experiences in their home towns. In under five minutes, users of the mobile app can create an itinerary tailored to their interests, location, and schedule, including descriptions for each activity or restaurant and a map with directions and the shortest route between events. 
+  Escape is an easy way for travelers to explore foreign cities and locals to discover new experiences in their home towns. In under five minutes, users of the app can create an itinerary tailored to their interests, location, and schedule. They can also view descriptions for each activity or restaurant and a map with directions between events.

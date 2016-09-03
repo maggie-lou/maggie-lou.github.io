@@ -3,12 +3,12 @@ layout: default
 img: cuRate_ipad.png
 imgbig: cuRate_ipad_big.png
 category: Services
-title: cuRate
+title: CURATE
 description: |
 number: 4
 modalhead: cuRate lets you read a quick snapshot of the daily news, catch up on important highlights from your friends, and appreciate high quality content from users that post well, but way too often. Businesses might use cuRate to track industry trends or keep tabs on competitors’ social media presences without lifting a finger. 
 howto1: Using a script written in R, cuRate reads tweets from the past day for all accounts input by the user. 
-howto2: An algorithm scores each tweet based on its number of favorites and retweets, and only the top tweet from each account will be sent to the desired Slack channel. 
+howto2: An algorithm scores each tweet based on its number of favorites and retweets,. Only the top tweet from each account will be sent to the desired Slack channel. 
 howto3: Users can set up a Cron job to automate the bot on their local machines, specifying the frequency with which cuRate posts, as well as the time of day the posts appear. 
 ---
 cuRate is a Slack bot that simplifies your inundated Twitter feed. Many Twitter accounts tweet multiple times per day, generating so much content that it becomes stressful and difficult for users to absorb the most important information. For each high-priority account that a user has selected, cuRate posts the top tweet from the past day into the Slack channel of the user’s choice. 

@@ -22,7 +22,7 @@ h6 {
 }
 
 .blue-header {
-    font-family: Ostrich Sans Medium; 
+    font-family: Ostrich Sans Medium,'Open Sans Condensed', sans-serif;
     letter-spacing: 3px; 
     font-size: 55px;
     color: rgb(0,165,196);
@@ -30,7 +30,7 @@ h6 {
 }
 
  .post-title {
-    font-family: Ostrich Sans Medium; 
+    font-family: Ostrich Sans Medium,'Open Sans Condensed', sans-serif;
     letter-spacing: 3px; 
     font-size: 55px;
     color: rgb(0,165,196);

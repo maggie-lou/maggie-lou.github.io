@@ -5,6 +5,12 @@
  */
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+@font-face {
+  font-family: 'Ostrich';
+  src: url('../fonts/ostrich-regular.ttf') format('truetype'), url('../fonts/ostrichsansrounded-medium.otf'), url('../fonts/ostrich-regular-webfont.woff') format('woff');
+  letter-spacing: 3px; 
+  font-weight: 500;
+}
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
