@@ -45,6 +45,12 @@
 
         }
 
+        document.addEventListener('keyup', function(e) {
+            if (e.keyCode ==27) {
+                close_img{{ post.number }}();
+            }
+        })
+
     </script>
 
     <div class = "modal-backdrop fade in" id = "black modal backdrop" style = "display: none;"></div> 

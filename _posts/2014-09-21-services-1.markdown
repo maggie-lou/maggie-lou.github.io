@@ -1,7 +1,7 @@
 ---
 layout: default
-img: escape_3.png
-imgbig: escape_3_big.png
+img: autotext_med.png
+imgbig: autotext_big.png
 category: Services
 title: OVER AUTO-TEXT
 description:
