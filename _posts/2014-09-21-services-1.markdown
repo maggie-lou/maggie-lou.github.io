@@ -6,10 +6,10 @@ category: Services
 title: OVER AUTO-TEXT
 description:
 number: 1
-modalhead: Texting your friends for help coming up with a clever caption was so last year. This text generation feature takes the stress out of the creative process. Once you have uploaded a photo to edit, you can use Auto-Text to choose a category or input a search term to find related content from Over's text database. If you're still struggling to find the perfect phrase, Auto-Text can even use image recognition to recommend content directly related to your photo. How cool is technology?
+modalhead: Texting your friends for help coming up with a clever caption was so last year. This text generation feature takes the stress out of the creative process. Once you have uploaded a photo to edit, you can use Auto-Text to choose a category or input a search term to find related content from Over's text database. If you're still struggling to find the perfect phrase, Auto-Text can even use image recognition to recommend content directly related to your photo. 
 howto1: Text content is stored in a SQLite database and tagged with category, character length, and author.
 howto2: Front end developers send GET requests including a category, search term, or link to the user’s image, which is temporarily hosted online (the image recognition API takes a URL as an input).
-howto3: If the user wants personalized recommendations, an image recognition API returns a series of tags for objects it has identified in the photo, and a confidence interval for each tag. 
+howto3: If the user wants personalized recommendations, an image recognition API returns a series of tags for objects it has identified in the photo and a confidence interval for each tag. 
 howto4: Using natural language processing to optimize matches, an R script processes the API request and image recognition tags. All related content is returned to the frontend in a JSON. 
 ---
 Over is a photo editing mobile application that allows users to easily overlay photos with text. Several interns and I developed the beta version of a text generation feature that suggests text content based on user-input category or search term. Feel a little stale for 2016? The feature can also use deep learning and image recognition to recommend content directly related to the user's underlying photo. <br/><br/>I worked on the backend of the feature, which included managing content in a SQLite database, creating an API, and working with an image recognition API and natural language processing.
