@@ -4,18 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 @font-face {
-  font-family: 'Please Work';
+  font-family: 'Ostrich Sans Medium';
 
   src: url('../fonts/ostrichsansrounded-medium.eot');
   src: url('../fonts/ostrichsansrounded-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/ostrich-regular-webfont.woff') format('woff'), url('../fonts/ostrich-regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'ostrichSansMedium';
-  src: url('../fonts/ostrichsansrounded-medium.eot');
-  src: url('../fonts/ostrichsansrounded-medium.otf') format('opentype');
-  src: url('../fonts/ostrichsansrounded-medium.ttf') format('truetype');
-  letter-spacing: 3px; 
-  font-weight: 500;
 }
 
 body,
@@ -36,7 +28,7 @@ h6 {
 }
 
 .blue-header {
-    font-family: 'Please Work','Open Sans Condensed', sans-serif;
+    font-family: 'Ostrich Sans Medium','Open Sans Condensed', sans-serif;
     letter-spacing: 3px; 
     font-size: 55px;
     color: rgb(0,165,196);
@@ -44,7 +36,7 @@ h6 {
 }
 
  .post-title {
-    font-family: 'ostrichSansMedium','Open Sans Condensed', sans-serif;
+    font-family: 'Ostrich Sans Medium','Open Sans Condensed', sans-serif;
     letter-spacing: 3px; 
     font-size: 55px;
     color: rgb(0,165,196);
