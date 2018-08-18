@@ -5,7 +5,7 @@ imgbig: overkpidash_big.png
 category: Services
 title: OVER KPI DASHBOARD
 description:
-number: 2
+number: 4
 modalhead: When I first began working at Over, a photo editing mobile app, employees struggled to find basic figures about the company, like its conversion rate or number of weekly active users. In addition to being constantly accessible online, this dashboard is now displayed at the beginning of every weekly Friday meeting. Since its deployment, it has helped the company measure marketing success, quantify the popularity of new features, and identify shortcomings for which the company can establish goals to improve.
 howto1: Every morning, an R script scrapes data about Over’s KPIs from Amplitude, a data analytics platform that is confusing and difficult to navigate, especially for inexperienced users. 
 howto2: The data is fed into a Ruby script that produces an automatically updating dashboard, which includes current data, data from the previous week, and the percent change between the two values.

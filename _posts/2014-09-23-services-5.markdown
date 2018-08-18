@@ -5,7 +5,7 @@ imgbig: escape_3_big.png
 category: Services
 title: ESCAPE
 description: |
-number: 3
+number: 5
 modalhead: Planning how to spend your day can be stressful, especially given the endless possibilities and overwhelming amount of content available on the internet. Sometimes you just want to be told where to go and a suggestion for how long you should spend there.  If you’re unhappy with your generated itinerary, you can choose to regenerate your entire schedule, or lock in certain events and regenerate the rest until you’ve planned your perfect day.<br/><br/>I developed Escape with a team during a hackathon for iXperience, a programming boot camp I attended over the summer. I worked on the backend of the app, which is coded in R.  
 howto1: Details about each event – including its name, duration, location, and description – are scraped from TripAdvisor, Zomato, and Google knowledge graphs and stored in a SQLite database. 
 howto2: The itinerary generation algorithm references user preferences for time of day and interests, as well as a distance matrix to minimize total distance traveled. The algorithm also incorporates opening and closing times of each event, to ensure events are only recommended during their functional hours.

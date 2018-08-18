@@ -1,0 +1,15 @@
+---
+layout: default
+img: bytesize.png
+imgbig: bytesize_big.png
+category: Services
+title: BYTESIZE
+description: |
+number: 1
+modalhead: ByteSize is an iOS application to coordinate crowdsourced on-the-go food delivery. On-the-go systems aim to tap into the daily routines of people, so that they can complete deliveries with little deviation from their everyday lives. Imagine someone delivering coffee, where both the coffee shop and drop-off location are on his/her way to work. This has the potential to increase helper participation, as it involves minimmal disruption without needing to increase the incentive to participate. As peer economies and physical crowdsourcing become more prevalent in our everyday lives, on-the-go systems represent an unprecedented way to accomplish physical tasks at scale.
+howto1: Users can place orders from popular restaurants using the Swift-powered front-end application.
+howto2: Requests are sent to a Node.js server and saved to a MongoDB database.
+howto3: Using location services in their iPhones, other participants in the system will be notified to pick up an order if they are close to the pick-up location.
+howto4: Based on the drop-off location and their availability, users can decide to accept a task if it is convenient, without having to dedicate their entire day to completing inconvenient deliveries.
+---
+ByteSize is an an iOS app for on-the-go food delivery, developed for my research on on-the-go physical crowdsourcing systems. Potential helpers are only asked to complete a delivery if the pick-up location is already on their current path. On-the-go systems may increase helper participation and require less incentives than traditional food-delivery systems, which often direct helpers to go out of their way to complete tasks.

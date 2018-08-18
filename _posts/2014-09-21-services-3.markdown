@@ -5,7 +5,7 @@ imgbig: autotext_big.png
 category: Services
 title: OVER AUTO-TEXT
 description:
-number: 1
+number: 3
 modalhead: Texting your friends for help coming up with a clever caption was so last year. This text generation feature takes the stress out of the creative process. Once you have uploaded a photo to edit, you can use Auto-Text to choose a category or input a search term to find related content from Over's text database. If you're still struggling to find the perfect phrase, Auto-Text can even use image recognition to recommend content directly related to your photo. 
 howto1: Text content is stored in a SQLite database and tagged with category, character length, and author.
 howto2: Front end developers send GET requests including a category, search term, or link to the user’s image, which is temporarily hosted online (the image recognition API takes a URL as an input).
