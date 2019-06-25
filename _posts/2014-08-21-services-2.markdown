@@ -6,9 +6,9 @@ category: Services
 title: MEETME
 description: |
 number: 2
-modalhead: MeetMe lets you send your availability to teammates or friends, so that you can overlay your schedules and easily find the best time to meet up. For convenience, you can import your Google calendar, and still continue to add additional conflicts or remove any imported events. 
+modalhead: [MeetMe](http://www.meetmecal.com/) lets you send your availability to teammates or friends, so that you can overlay your schedules and easily find the best time to meet up. For convenience, you can import your Google calendar, and still continue to add additional conflicts or remove any imported events. 
 howto1: Using Google OAuth, users can import their gCals into MeetMe, a web application with a Node.js backend, MongoDB database, and Jade-templated frontend.
 howto2: Users can drag to add and remove conflicts from their personal calendars, including those imported from gCal.
 howto3: Users can create "teams" to share their calendars with others, and overlay all teammates' calendars to find blocks of time when everyone is available to meet.
 ---
-MeetMe lets you send your availability to teammates or friends, so that you can overlay your schedules and easily find the best time to meet up. For convenience, you can import your Google calendar, and still continue to add additional conflicts or remove any imported events. 
+[MeetMe](http://www.meetmecal.com/) lets you send your availability to teammates or friends, so that you can overlay your schedules and easily find the best time to meet up. For convenience, you can import your Google calendar, and still continue to add additional conflicts or remove any imported events. 
